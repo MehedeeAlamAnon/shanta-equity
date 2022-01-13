@@ -9,7 +9,7 @@
     />
 
     <div>
-        <img :src="require('@/assets/icons/logo2.jpg')" class="w-50 mx-auto" />
+        <img :src="require('@/assets/icons/shanta_equity.svg')" class="w-50 mx-auto" />
     </div>
     <div class="mx-auto sm:px-6 lg:px-8">
         <h2 class="text-7xl  font-bold text-center">
