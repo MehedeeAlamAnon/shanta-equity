@@ -1,0 +1,65 @@
+.banner-slider{
+  height: 100%;
+  position: relative;
+  &-overlay{
+    content: '';
+    position: absolute;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    top: 0;
+    z-index: 3
+  }
+  &-footer{
+    content: '';
+    position: absolute;
+    width: 100%;
+    padding-left: 60px;
+    min-height: 45px;
+    background-color: rgba(0,0,0, .4);
+    bottom: 0;
+    z-index: 3;
+    .update-news{
+      color: #fff;
+      font-size: .85rem;
+    }
+  }
+  .cus-slide{
+    padding-top: 120px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    &-content{
+      position: absolute;
+      bottom: 100px;
+      color: #fff;
+      .cus-slide-title{
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .cus-slide-desc{
+        width: 100%;
+        max-width: 480px;
+        font-size: .95rem;
+      }
+      .cus-slide-quote{
+        max-width: 480px;
+        font-size: 1.2rem;
+      }
+      .cus-slide-author{
+        font-size: .95rem;
+      }
+    }
+  }
+}
+
+.investment-info{
+  border-top: 2px solid #111;
+  padding-top: 30px;
+  &-item{
+    text-decoration: none !important;
+  }
+  &-text{
+    font-size: .95rem;
+  }
+}
