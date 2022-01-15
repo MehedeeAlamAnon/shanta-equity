@@ -76,7 +76,7 @@
               <div class="navbar-brand">
                 <NuxtLink to="/">
                   <img
-                    src="../assets/images/shanta_equity.svg"
+                    src="../assets/images/shanta_equity_w.svg"
                     alt="shanta-equity-logo"
                   />
                 </NuxtLink>
