@@ -83,18 +83,24 @@
               </div>
             </div>
           </div>
-          <div class="banner-slider-footer d-flex align-items-center">
-            <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink>
-            <div class="update-news ml-3">
-              DSENEWS: Awareness Message for Investors
-            </div>
+          <div class="banner-slider-footer d-flex align-items-center justify-content-center">
+            <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
+
+            <span class="align-self-center pt-2">
+              <p class="text-white">
+                Call us today at +88 01713 086 712 or email us at
+                info@shantaequity.net
+              </p>
+            </span>
           </div>
         </div>
       </div>
       <!-- main-content end -->
       <aside class="sidebar right-sidebar bg-theme-secondary vh-100">
         <div class="header header-sidebar justify-content-between">
-          <div class="text-white font-weight-bold">Settings Standards</div>
+          <div class="text-white font-weight-bold">
+            Your Trusted Financial Advisor
+          </div>
           <button
             id="hamburger-menu"
             class="hamburger-menu text-uppercase text-bold"
@@ -110,37 +116,49 @@
           <NuxtLink
             to="/login"
             class="btn btn-block btn-theme-primary font-weight-bold"
-            >Update</NuxtLink
+            >Learn More</NuxtLink
           >
           <NuxtLink
             to="/open-account"
             class="btn btn-block btn-theme-primary font-weight-bold mt-4"
-            >Open an Account</NuxtLink
+            >Contact Us</NuxtLink
           >
           <div class="products">
-            <h3 class="heading-3 text-muted font-weight-bold mt-5 mb-4">
-              Products
+            <h3 class="heading-3 text-white font-weight-bold mt-5 mb-4">
+              Our Services
             </h3>
+            <p class="text-muted">
+              Welcome to Shanta Equity Ltd. We draw on the expertise of the best
+              minds in the country to provide our clients with customized
+              investment banking and corporate advisory services
+            </p>
             <div class="investment-info">
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">IPO</h3>
+                <h3 class="heading-4 text-uppercase text-white mb-1">
+                  Fund Raising
+                </h3>
                 <p class="investment-info-text text-muted">
-                  Investment in IPO is very easy now with Shanta Securities
-                  Limited.
+                  We use a wide array of strategies to raise funds for your next
+                  big project and optimize your cost of capital
                 </p>
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">CTA</h3>
+                <h3 class="heading-4 text-uppercase text-white mb-1">
+                  Managed Portfolio
+                </h3>
                 <p class="investment-info-text text-muted">
-                  Investors can buy or sell securities by providing the capital
-                  needed to fund the transaction without relying on the use of
-                  margin.
+                  We ensure the best return on your capital with our
+                  industry-leading research, portfolio management and execution
+                  services
                 </p>
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">MTA</h3>
+                <h3 class="heading-4 text-uppercase text-white mb-1">
+                  Corporate Advisory
+                </h3>
                 <p class="investment-info-text text-muted">
-                  Investors have the option of trading with margin loan.
+                  With our team of experts, we help maximize the value of your
+                  company
                 </p>
               </NuxtLink>
             </div>
