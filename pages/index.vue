@@ -91,7 +91,7 @@
 
             <span class="align-self-center pt-2">
               <p class="text-white">
-                Call us today at +88 01713 086 712 or email us at
+                Call us today at +88 01788 68 5060 or email us at
                 info@shantaequity.net
               </p>
             </span>
