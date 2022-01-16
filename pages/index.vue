@@ -7,12 +7,13 @@
             <swiper-slide class="cus-slide slide-1">
               <div class="cus-slide-content">
                 <h1 class="cus-slide-title text-capitalize mb-3">
-                  An innovative financial <br />services company
+                  An innovative investment bank
                 </h1>
                 <div class="cus-slide-desc">
-                  Offering a range of brokerage and investing solutions. We
-                  believe in being committed to going the extra mile for our
-                  customers and using our intuit
+                  Offering a wide range of investment banking, corporate
+                  advisory and portfolio management solutions. We believe in
+                  going the extra mile for our clients to provide the optimum
+                  solution for their unique needs
                 </div>
               </div>
             </swiper-slide>
@@ -83,7 +84,9 @@
               </div>
             </div>
           </div>
-          <div class="banner-slider-footer d-flex align-items-center justify-content-center">
+          <div
+            class="banner-slider-footer d-flex align-items-center justify-content-center"
+          >
             <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
 
             <span class="align-self-center pt-2">
