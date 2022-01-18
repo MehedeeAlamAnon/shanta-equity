@@ -1,0 +1,62 @@
+.mega-menu{
+  width: 100%;
+  height: 100vh;
+  background: url("~assets/images/banner/banner1.jpeg") no-repeat;
+  background-size: cover;
+  position: relative;
+  &-content{
+    background-color: rgba(0,0,0, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 60px;
+    .footer{
+      position: absolute;
+      bottom: 30px;
+      &-left{
+        min-width: 330px;
+        padding-right: 30px;
+        color: $darkGrey;
+      }
+      &-menu{
+        &-item{
+          color: $lightGrey;
+          margin-right: 1.25rem;
+          text-decoration: none;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-left: 1px solid rgba(255,255,255, .05);
+    border-top: 1px solid rgba(255,255,255, .05);
+  }
+  &-item{
+    padding: 1rem;
+    min-height: 180px;
+    border-right: 1px solid rgba(255,255,255, .05);
+    border-bottom: 1px solid rgba(255,255,255, .05);
+    text-decoration: none !important;
+    transition: .3s;
+    &:hover{
+      background-color: $primaryColor;
+      .mega-menu-nested-link{
+        color: #eee;
+      }
+    }
+  }
+  &-nested-link{
+    color: $lightGrey;
+    &:hover{
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+}

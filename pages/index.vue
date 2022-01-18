@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" v-if="!megaMenuShow">
     <main class="main">
       <div class="main-content vh-100">
         <div class="main-content-home banner-slider">
@@ -7,13 +7,12 @@
             <swiper-slide class="cus-slide slide-1">
               <div class="cus-slide-content">
                 <h1 class="cus-slide-title text-capitalize mb-3">
-                  An innovative investment bank
+                  An innovative financial <br />services company
                 </h1>
                 <div class="cus-slide-desc">
-                  Offering a wide range of investment banking, corporate
-                  advisory and portfolio management solutions. We believe in
-                  going the extra mile for our clients to provide the optimum
-                  solution for their unique needs
+                  Offering a range of brokerage and investing solutions. We
+                  believe in being committed to going the extra mile for our
+                  customers and using our intuit
                 </div>
               </div>
             </swiper-slide>
@@ -74,24 +73,15 @@
           </swiper>
           <div class="banner-slider-overlay">
             <div class="header">
-              <div class="navbar-brand">
-                <NuxtLink to="/">
-                  <img
-                    src="../assets/images/shanta_equity_w.svg"
-                    alt="shanta-equity-logo"
-                  />
-                </NuxtLink>
-              </div>
+              <Logo />
             </div>
           </div>
-          <div
-            class="banner-slider-footer d-flex align-items-center justify-content-center"
-          >
+          <div class="banner-slider-footer d-flex align-items-center justify-content-center">
             <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
 
             <span class="align-self-center pt-2">
               <p class="text-white">
-                Call us today at +88 01788 68 5060 or email us at
+                Call us today at +88 01713 086 712 or email us at
                 info@shantaequity.net
               </p>
             </span>
@@ -107,6 +97,7 @@
           <button
             id="hamburger-menu"
             class="hamburger-menu text-uppercase text-bold"
+            @click="changeMegaMenu"
           >
             <span class="hamburger">
               <span class="line"></span>
@@ -195,15 +186,22 @@
 <script>
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import Logo from '../components/Logo'
+
+import {mapState, mapActions} from 'vuex'
 
 export default {
   name: 'IndexPage',
   components: {
     Swiper,
     SwiperSlide,
+    Logo
   },
   directives: {
     swiper: directive,
+  },
+  computed: {
+    ...mapState({ megaMenuShow: state => state.megaMenuOpen })
   },
   data() {
     return {
@@ -225,6 +223,9 @@ export default {
       },
     }
   },
+  methods: {
+    ...mapActions(['changeMegaMenu'])
+  }
 }
 </script>
 
@@ -237,19 +238,19 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     &.slide-1 {
-      background-image: url('../assets/images/banner/banner1.jpeg');
+      background-image: url('~assets/images/banner/banner1.jpeg');
     }
     &.slide-2 {
-      background-image: url('../assets/images/banner/banner2.jpeg');
+      background-image: url('~assets/images/banner/banner2.jpeg');
     }
     &.slide-3 {
-      background-image: url('../assets/images/banner/banner3.jpeg');
+      background-image: url('~assets/images/banner/banner3.jpeg');
     }
     &.slide-4 {
-      background-image: url('../assets/images/banner/banner4.jpeg');
+      background-image: url('~assets/images/banner/banner4.jpeg');
     }
     &.slide-5 {
-      background-image: url('../assets/images/banner/banner5.jpeg');
+      background-image: url('~assets/images/banner/banner5.jpeg');
     }
   }
 }

@@ -36,9 +36,6 @@
     }
   }
 
-  //&:not(.hamburger-menu-close) .line:first-child {
-  //  top: 0;
-  //}
   &:not(.hamburger-menu-close) .line:after {
     content: ' ';
     display: block;
@@ -61,3 +58,16 @@
   }
 }
 
+.hamburger-menu-close{
+  .hamburger{
+    .line:first-child{
+      transform: translateY(9px) rotate(45deg);
+    }
+    .line:nth-child(2){
+      visibility: hidden;
+    }
+    .line:last-child{
+      transform: translateY(-11px) rotate(-45deg);
+    }
+  }
+}

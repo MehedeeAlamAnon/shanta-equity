@@ -12,7 +12,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/fav.png' }
+      { rel: 'icon', type: 'image/png', href: '/fav.png' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap'
+      }
     ]
   },
 
@@ -20,6 +24,8 @@ export default {
   css: [
     // swiper style
     'swiper/css/swiper.css',
+    // vue2 animate css
+    'vue2-animate/dist/vue2-animate.min.css',
     // scss file in the project
     '@/assets/scss/index.scss',
   ],
