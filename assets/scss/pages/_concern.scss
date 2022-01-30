@@ -1,0 +1,106 @@
+.concern{
+  background: url("~/assets/images/banner/banner5.jpeg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+  position: relative;
+  .hamburger-toggle{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+  }
+  .sidebar-inner{
+    height: 100%;
+    .header, .sidebar-inner-body, .sidebar-footer{
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+  &-content{
+    width: 50%;
+    height: 100vh;
+    background: url("~/assets/images/banner/banner1.jpeg") no-repeat;
+    position: relative;
+    &-overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0, .8);
+    }
+  }
+
+  // concern pages sidebar
+  .sidebar{
+    color: #A0A2A5;
+    &-concern-title{
+      padding-bottom: 27px;
+      border-bottom: 2px solid #181818;
+      .arrow-icon{
+        width: 30px;
+        max-height: 20px;
+        position: relative;
+        left: 0;
+        margin-right: 15px;
+      }
+      &:hover .arrow-icon {
+        -webkit-animation: arrowIconAnim 0.29s ease-out;
+        -moz-animation: arrowIconAnim 0.29s ease-out;
+        -o-animation: arrowIconAnim 0.29s ease-out;
+        animation: arrowIconAnim 0.29s ease-out;
+        animation-duration: 0.29s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: arrowIconAnim;
+      }
+      @keyframes arrowIconAnim {
+        from {
+          left: 15px;
+        }
+        to {
+          left: 0
+        }
+      }
+    }
+    a{
+      color: #A0A2A5;
+      &:hover{
+        color: #fff;
+      }
+    }
+
+    &-menu{
+      .list-group-item{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255, .05);
+        position: relative;
+        padding-left: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: bold;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 1px;
+          left: 0;
+          bottom: -1px;
+          background-color: $primaryColor;
+          transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:hover::after{
+          width: 100%;
+        }
+      }
+      .list-group-item.active{
+        color: #fff;
+        border-bottom: 1px solid $primaryColor;
+      }
+    }
+  }
+}

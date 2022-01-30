@@ -1,13 +1,5 @@
 <template>
   <div>
-    <transition
-      name="slide"
-      enter-active-class="slideInDown"
-      leave-active-class="slideOutUp"
-    >
-      <MegaMenu v-if='megaMenuShow' style="animation-duration: 0.5s"/>
-    </transition>
-
     <Nuxt keep-alive/>
     <button class="msg-wrapper" @click="showMsgForm">
       <img src="../assets/images/feedback-icon.png" class="msg-icon" alt="message us">
@@ -37,19 +29,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import MegaMenu from '../components/MegaMenu'
-
 export default {
   name: "default",
-  components: { MegaMenu },
   data(){
     return{
       msgFormShow: false,
     }
-  },
-  computed: {
-    ...mapState({ megaMenuShow: state => state.megaMenuOpen })
   },
   methods: {
     showMsgForm(){
@@ -61,7 +46,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

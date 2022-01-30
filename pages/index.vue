@@ -1,5 +1,15 @@
 <template>
-  <div class="home" v-if="!megaMenuShow">
+  <div class="home">
+    <transition
+      name="slide"
+      enter-active-class="slideInDown"
+      leave-active-class="slideOutUp"
+    >
+      <div class="mega-menu-wrapper" v-if='megaMenuShow' style="animation-duration: 0.5s">
+        <MegaMenu />
+      </div>
+    </transition>
+
     <main class="main">
       <div class="main-content vh-100">
         <div class="main-content-home banner-slider">
@@ -76,14 +86,12 @@
               <Logo />
             </div>
           </div>
-          <div class="banner-slider-footer d-flex align-items-center justify-content-center">
+          <div class="banner-slider-footer d-flex align-items-center justify-content-center text-white">
             <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
 
-            <span class="align-self-center pt-2">
-              <p class="text-white">
+            <span>
                 Call us today at +88 01713 086 712 or email us at
                 info@shantaequity.net
-              </p>
             </span>
           </div>
         </div>
@@ -91,7 +99,7 @@
       <!-- main-content end -->
       <aside class="sidebar right-sidebar bg-theme-secondary vh-100">
         <div class="header header-sidebar justify-content-between">
-          <div class="text-white font-weight-bold">
+          <div class="text-white font-weight-bold pr-3">
             Your Trusted Financial Advisor
           </div>
           <button
@@ -118,7 +126,7 @@
             >Contact Us</NuxtLink
           >
           <div class="products">
-            <h3 class="heading-3 text-white font-weight-bold mt-5 mb-4">
+            <h3 class="heading-3 text-white mt-5 mb-2">
               Our Services
             </h3>
             <p class="text-muted">
@@ -128,7 +136,7 @@
             </p>
             <div class="investment-info">
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">
+                <h3 class="heading-4 text-uppercase text-white mb-2">
                   Fund Raising
                 </h3>
                 <p class="investment-info-text text-muted">
@@ -137,7 +145,7 @@
                 </p>
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">
+                <h3 class="heading-4 text-uppercase text-white mb-2">
                   Managed Portfolio
                 </h3>
                 <p class="investment-info-text text-muted">
@@ -147,7 +155,7 @@
                 </p>
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
-                <h3 class="heading-4 text-uppercase text-white mb-1">
+                <h3 class="heading-4 text-uppercase text-white mb-2">
                   Corporate Advisory
                 </h3>
                 <p class="investment-info-text text-muted">
@@ -184,6 +192,7 @@
 </template>
 
 <script>
+import MegaMenu from '../components/MegaMenu'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 import Logo from '../components/Logo'
@@ -195,7 +204,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Logo
+    Logo,
+    MegaMenu
   },
   directives: {
     swiper: directive,

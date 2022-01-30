@@ -2,6 +2,13 @@
 
 body{
   font-family: 'Nunito', sans-serif;
+  font-size: .95rem;
+}
+a{
+  text-decoration: none !important;
+  &:hover{
+    text-decoration: none !important;
+  }
 }
 
 @import "variables";
@@ -14,3 +21,4 @@ body{
 
 //pages style
 @import "pages/home";
+@import "pages/concern";

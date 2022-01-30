@@ -5,6 +5,11 @@
   background-color: $secondaryColor;
 }
 
+// text color
+.text-theme-primary{
+  color: $primaryColor;
+}
+
 
 //buttons
 .btn-theme-primary{
@@ -21,4 +26,59 @@
   svg{
     width: 60px;
   }
+}
+
+// padding
+.pl-30{
+  padding-left: 30px;
+}
+.pr-30{
+  padding-right: 30px;
+}
+.pt-30{
+  padding-top: 30px;
+}
+.pr-30{
+  padding-bottom: 30px;
+}
+.p-30{
+  padding: 30px;
+}
+.py-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.px-30{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+// text
+.heading-1{
+  font-size: 60px;
+  font-weight: bold;
+}
+.heading-2{
+  font-size: 48px;
+  font-weight: bold;
+}
+.heading-3{
+  font-size: 36px;
+  font-weight: bold;
+}
+.heading-4{
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading-5{
+  font-size: 24px;
+  font-weight: bold;
+}
+.heading-6{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.copyright{
+  font-size: .875rem;
 }
