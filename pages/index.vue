@@ -9,7 +9,15 @@
         <MegaMenu />
       </div>
     </transition>
-
+    <header class="header">
+      <Logo />
+      <div class='header-right'>
+        <div class="text-white font-weight-bold header-sidebar header-slogan">
+          Your Trusted Financial Advisor
+        </div>
+        <Hamburger />
+      </div>
+    </header>
     <main class="main">
       <div class="main-content vh-100">
         <div class="main-content-home banner-slider">
@@ -81,14 +89,8 @@
               slot="button-next"
             ></div>
           </swiper>
-          <div class="banner-slider-overlay">
-            <div class="header">
-              <Logo />
-            </div>
-          </div>
           <div class="banner-slider-footer d-flex align-items-center justify-content-center text-white">
             <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
-
             <span>
                 Call us today at +88 01713 086 712 or email us at
                 info@shantaequity.net
@@ -98,8 +100,8 @@
       </div>
       <!-- main-content end -->
       <aside class="sidebar right-sidebar bg-theme-secondary vh-100">
-        <div class="header header-sidebar justify-content-between">
-          <div class="text-white font-weight-bold pr-3">
+        <div class="header-sidebar d-flex align-items-center justify-content-between">
+          <div class="text-white font-weight-bold pr-3 header-slogan">
             Your Trusted Financial Advisor
           </div>
           <button
@@ -126,10 +128,10 @@
             >Contact Us</NuxtLink
           >
           <div class="products">
-            <h3 class="heading-3 text-white mt-5 mb-2">
+            <h3 class="heading-3 text-white mt-4 mb-2 pt-1">
               Our Services
             </h3>
-            <p class="text-muted">
+            <p class="text-muted pb-2">
               Welcome to Shanta Equity Ltd. We draw on the expertise of the best
               minds in the country to provide our clients with customized
               investment banking and corporate advisory services
@@ -165,7 +167,7 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="sidebar-footer">
+          <div class="sidebar-footer pb-2">
             <ul class="nav social">
               <li class="nav-item">
                 <a href="" target="_blank" class="nav-link"
@@ -195,13 +197,15 @@
 import MegaMenu from '../components/MegaMenu'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-import Logo from '../components/Logo'
+import Logo from '~/components/Logo'
+import Hamburger from '~/components/Hamburger'
 
 import {mapState, mapActions} from 'vuex'
 
 export default {
   name: 'IndexPage',
   components: {
+    Hamburger,
     Swiper,
     SwiperSlide,
     Logo,
@@ -222,10 +226,11 @@ export default {
           el: '.swiper-pagination',
           clickable: true,
         },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+        autoplay: false,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
