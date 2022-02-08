@@ -33,75 +33,75 @@
                     <NuxtLink to="/corporate-profile/background" class="mega-menu-item-link">
                       <h5 class="mega-menu-item-title mb-3 text-white">Corporate Profile</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='/corporate-profile/background' class='mega-menu-nested-link' @click="closeMegaMenu($event)">Background,</NuxtLink>
-                        <NuxtLink to='/corporate-profile/who-we-are' class='mega-menu-nested-link' @click="closeMegaMenu($event)">who we are,</NuxtLink>
-                        <NuxtLink to='/corporate-profile/vision-mission' class='mega-menu-nested-link' @click="closeMegaMenu($event)">the vision & mission,</NuxtLink>
-                        <NuxtLink to='/corporate-profile/our-core-values' class='mega-menu-nested-link' @click="closeMegaMenu($event)">our core values,</NuxtLink>
-                        <NuxtLink to='/corporate-profile/board-of-directors' class='mega-menu-nested-link' @click="closeMegaMenu($event)">board of directors,</NuxtLink>
-                        <NuxtLink to='/corporate-profile/our-logo' class='mega-menu-nested-link' @click="closeMegaMenu($event)">our logo</NuxtLink>
+                        <NuxtLink to='/corporate-profile/background' class='mega-menu-nested-link'>Background,</NuxtLink>
+                        <NuxtLink to='/corporate-profile/who-we-are' class='mega-menu-nested-link'>who we are,</NuxtLink>
+                        <NuxtLink to='/corporate-profile/vision-mission' class='mega-menu-nested-link'>the vision & mission,</NuxtLink>
+                        <NuxtLink to='/corporate-profile/our-core-values' class='mega-menu-nested-link'>our core values,</NuxtLink>
+                        <NuxtLink to='/corporate-profile/board-of-directors' class='mega-menu-nested-link'>board of directors,</NuxtLink>
+                        <NuxtLink to='/corporate-profile/our-logo' class='mega-menu-nested-link'>our logo</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink to="" class="mega-menu-item-link">
+                    <NuxtLink to="/products/ipo" class="mega-menu-item-link">
                       <h5 class="mega-menu-item-title mb-3 text-white">Products</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='' class='mega-menu-nested-link'>IPO,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>CTA,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>MTA,</NuxtLink>
+                        <NuxtLink to='/products/ipo' class='mega-menu-nested-link'>IPO,</NuxtLink>
+                        <NuxtLink to='/products/cta' class='mega-menu-nested-link'>CTA,</NuxtLink>
+                        <NuxtLink to='/products/mta' class='mega-menu-nested-link'>MTA,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink to="" class="mega-menu-item-link">
+                    <NuxtLink to="/services/sms" class="mega-menu-item-link">
                       <h5 class="mega-menu-item-title mb-3 text-white">Services</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='' class='mega-menu-nested-link'>SMS,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>BEFTN,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>DP,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Internet trading,</NuxtLink>
+                        <NuxtLink to='/services/sms' class='mega-menu-nested-link'>SMS,</NuxtLink>
+                        <NuxtLink to='/services/beftn' class='mega-menu-nested-link'>BEFTN,</NuxtLink>
+                        <NuxtLink to='/services/dp' class='mega-menu-nested-link'>DP,</NuxtLink>
+                        <NuxtLink to='/services/internet-trading' class='mega-menu-nested-link'>Internet trading,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/research-investment/ipo-review">
                       <h5 class="mega-menu-item-title mb-3 text-white">Research & Investment</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='' class='mega-menu-nested-link'>IPO Review,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Daily Market Recap,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Morning news flash,</NuxtLink>
+                        <NuxtLink to='/research-investment/ipo-review' class='mega-menu-nested-link'>IPO Review,</NuxtLink>
+                        <NuxtLink to='/research-investment/daily-market-recap' class='mega-menu-nested-link'>Daily Market Recap,</NuxtLink>
+                        <NuxtLink to='/research-investment/morning-news-flash' class='mega-menu-nested-link'>Morning news flash,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/career/hr-philosophy">
                       <h5 class="mega-menu-item-title mb-3 text-white">Career</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='' class='mega-menu-nested-link'>HR Philosophy,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Job Opening,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Apply Online,</NuxtLink>
+                        <NuxtLink to='/career/hr-philosophy' class='mega-menu-nested-link'>HR Philosophy,</NuxtLink>
+                        <NuxtLink to='/career/job-opening' class='mega-menu-nested-link'>Job Opening,</NuxtLink>
+                        <NuxtLink to='/career/apply-online' class='mega-menu-nested-link'>Apply Online,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/downloads">
                       <h5 class="mega-menu-item-title mb-3 text-white">Downloads</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)"></p>
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/contact-us/address">
                       <h5 class="mega-menu-item-title mb-3 text-white">Contact us</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='' class='mega-menu-nested-link'>Address,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>Location map,</NuxtLink>
-                        <NuxtLink to='' class='mega-menu-nested-link'>feedback,</NuxtLink>
+                        <NuxtLink to='/contact-us/address' class='mega-menu-nested-link'>Address,</NuxtLink>
+                        <NuxtLink to='/contact-us/location-map' class='mega-menu-nested-link'>Location map,</NuxtLink>
+                        <NuxtLink to='/contact-us/feedback' class='mega-menu-nested-link'>feedback</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
@@ -122,8 +122,8 @@
                 </p>
               </div>
               <div class="footer-menu d-flex justify-content-start">
-                <NuxtLink to="" class="footer-menu-item">Home</NuxtLink>
-                <NuxtLink to="" class="footer-menu-item">News & Update</NuxtLink>
+                <NuxtLink to="/" class="footer-menu-item">Home</NuxtLink>
+                <NuxtLink to="/news-updates/stock-exchange-news" class="footer-menu-item">News & Update</NuxtLink>
               </div>
             </footer>
           </main>

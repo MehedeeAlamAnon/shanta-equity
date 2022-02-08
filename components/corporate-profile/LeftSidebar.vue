@@ -6,10 +6,10 @@
       </div>
       <!-- header end -->
       <div class='sidebar-inner-body align-self-start'>
-        <NuxtLink to="" class='sidebar-concern-title d-flex align-items-center'>
+        <a href="javascript:void(0)" class='sidebar-concern-title d-flex align-items-center' @click='openMegaMenu'>
           <img src='~/assets/images/arrow.svg' alt='arrow' class='arrow-icon img-fluid'>
           <h4 class='title text-capitalize mb-0 heading-6'>Corporate Profile</h4>
-        </NuxtLink>
+        </a>
         <!-- breadcrumb end -->
         <ul class='sidebar-menu list-group mt-5'>
           <NuxtLink to='/corporate-profile/background' class='list-group-item list-group-item-action text-capitalize'>Background</NuxtLink>
@@ -29,8 +29,13 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  name: 'LeftSidebar'
+  name: 'LeftSidebar',
+  methods: {
+    ...mapActions(['openMegaMenu'])
+  }
 }
 </script>
 

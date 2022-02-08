@@ -8,6 +8,9 @@ export const actions = {
   changeMegaMenu({commit}) {
     commit('setMegaMenu')
   },
+  openMegaMenu({commit}) {
+    commit('openMenu')
+  },
   closeMegaMenu({commit}) {
     commit('closeMenu')
   },
@@ -17,6 +20,9 @@ export const actions = {
 export const mutations = {
   setMegaMenu(state) {
     state.megaMenuOpen = !state.megaMenuOpen
+  },
+  openMenu(state) {
+    state.megaMenuOpen = true
   },
   closeMenu(state) {
     state.megaMenuOpen = false

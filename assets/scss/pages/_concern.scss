@@ -66,6 +66,21 @@
           border: none;
           border-bottom: 1px solid rgba(255,255,255, 0.09);
           padding: 15px 0;
+          .action{
+            min-width: 100px;
+            text-align: right;
+            .btn-action{
+              border: 1px solid $primaryColor;
+              color: $primaryColor;
+              border-radius: 0;
+              padding: 0.175rem 0.55rem;
+              transition: all ease .3s;
+              &:hover{
+                background-color: $primaryColor;
+                color: #fff;
+              }
+            }
+          }
         }
       }
       &-card{
@@ -118,6 +133,70 @@
           border: none;
           &-left{
             min-width: 100px;
+          }
+        }
+      }
+      .pagination{
+        &-item{
+          padding: 0;
+          color: #6D6E71;
+          font-size: 1.115rem;
+          font-weight: bold;
+          margin: 0 10px;
+          &:hover, &:focus{
+            color: $primaryColor;
+          }
+        }
+        .btn-action{
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          border-radius: 0;
+          padding: 0.175rem 0.55rem;
+          transition: all ease .3s;
+          &:hover{
+            background-color: $primaryColor;
+            color: #fff;
+          }
+        }
+        .btn-action.disabled-class{
+          border: 1px solid #ddd;
+          background-color: #ddd;
+          color: #111111;
+          cursor: not-allowed;
+        }
+      }
+      &-form{
+        .form-group{
+          border-bottom: 1px solid rgba(255,255,255, 0.09);
+          .form-control{
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            height: calc(2em + 0.75rem + 2px);
+            color: #fff;
+            padding-left: 0;
+            &:focus-within{
+              box-shadow: none;
+              outline: none;
+            }
+            &::placeholder{
+              color: #aaa;
+            }
+          }
+          .error-text{
+            color: #a94442;
+            display: block;
+            margin-bottom: .5rem;
+          }
+          .btn{
+            border-radius: 0;
+            margin-bottom: 1rem;
+          }
+          .btn-upload{
+            background-color: $primaryColor;
+            color: #fff;
+            margin-bottom: 1rem;
           }
         }
       }
