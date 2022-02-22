@@ -26,7 +26,7 @@
             <div class='concern-text'>
               <h5 class='concern-text-title'>Vision</h5>
               <p class='concern-paragraph'>
-                To set SSL as an icon for both clients and competitors in the fields of innovation,
+                To set SEL as an icon for both clients and competitors in the fields of innovation,
                 product quality, service standard, profitability and community work.
               </p>
               <h5 class='concern-text-title'>Mission For Our Clients:</h5>

@@ -73,12 +73,12 @@
                           @click="closeMegaMenu($event)"
                           >our core values,</NuxtLink
                         >
-                        <NuxtLink
+                        <!-- <NuxtLink
                           to="/corporate-profile/board-of-directors"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
                           >board of directors,</NuxtLink
-                        >
+                        > -->
                         <NuxtLink
                           to="/corporate-profile/our-logo"
                           class="mega-menu-nested-link"
@@ -264,8 +264,7 @@
             <footer class="footer d-flex align-items-center">
               <div class="footer-left">
                 <p class="footer-text mb-0">
-                  &copy; 2022 Shanta Equity. <br />
-                  Designed by Name
+                  &copy; 2022 Shanta Equity Ltd. <br />
                 </p>
               </div>
               <div class="footer-menu d-flex justify-content-start">
