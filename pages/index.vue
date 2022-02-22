@@ -5,13 +5,17 @@
       enter-active-class="slideInDown"
       leave-active-class="slideOutUp"
     >
-      <div class="mega-menu-wrapper" v-if='megaMenuShow' style="animation-duration: 0.5s">
+      <div
+        class="mega-menu-wrapper"
+        v-if="megaMenuShow"
+        style="animation-duration: 0.5s"
+      >
         <MegaMenu />
       </div>
     </transition>
     <header class="header">
       <Logo />
-      <div class='header-right'>
+      <div class="header-right">
         <div class="text-white font-weight-bold header-sidebar header-slogan">
           Your Trusted Financial Advisor
         </div>
@@ -89,18 +93,22 @@
               slot="button-next"
             ></div>
           </swiper>
-          <div class="banner-slider-footer d-flex align-items-center justify-content-center text-white">
+          <div
+            class="banner-slider-footer d-flex align-items-center justify-content-center text-white"
+          >
             <!-- <NuxtLink to="" class="btn btn-theme-primary">Update</NuxtLink> -->
             <span>
-                Call us today at +88 01713 086 712 or email us at
-                info@shantaequity.net
+              Call us today at +88 01713 086 712 or email us at
+              info@shantaequity.net
             </span>
           </div>
         </div>
       </div>
       <!-- main-content end -->
       <aside class="sidebar right-sidebar bg-theme-secondary vh-100">
-        <div class="header-sidebar d-flex align-items-center justify-content-between">
+        <div
+          class="header-sidebar d-flex align-items-center justify-content-between"
+        >
           <div class="text-white font-weight-bold pr-3 header-slogan">
             Your Trusted Financial Advisor
           </div>
@@ -128,9 +136,7 @@
             >Contact Us</NuxtLink
           >
           <div class="products">
-            <h3 class="heading-3 text-white mt-4 mb-2 pt-1">
-              Our Services
-            </h3>
+            <h3 class="heading-3 text-white mt-4 mb-2 pt-1">Our Services</h3>
             <p class="text-muted pb-2">
               Welcome to Shanta Equity Ltd. We draw on the expertise of the best
               minds in the country to provide our clients with customized
@@ -144,6 +150,16 @@
                 <p class="investment-info-text text-muted">
                   We use a wide array of strategies to raise funds for your next
                   big project and optimize your cost of capital
+                </p>
+              </NuxtLink>
+              <NuxtLink to="/" class="investment-info-item mb-4 d-block">
+                <h3 class="heading-4 text-uppercase text-white mb-2">
+                  Issue Management
+                </h3>
+                <p class="investment-info-text text-muted">
+                  If you need to raise funds through an IPO or Bond issuance,
+                  our experienced team is here to handle the entire process from
+                  start to finish
                 </p>
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
@@ -200,7 +216,7 @@ import 'swiper/css/swiper.css'
 import Logo from '~/components/Logo'
 import Hamburger from '~/components/Hamburger'
 
-import {mapState, mapActions} from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'IndexPage',
@@ -209,13 +225,13 @@ export default {
     Swiper,
     SwiperSlide,
     Logo,
-    MegaMenu
+    MegaMenu,
   },
   directives: {
     swiper: directive,
   },
   computed: {
-    ...mapState({ megaMenuShow: state => state.megaMenuOpen })
+    ...mapState({ megaMenuShow: (state) => state.megaMenuOpen }),
   },
   data() {
     return {
@@ -239,8 +255,8 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['changeMegaMenu'])
-  }
+    ...mapActions(['changeMegaMenu']),
+  },
 }
 </script>
 
