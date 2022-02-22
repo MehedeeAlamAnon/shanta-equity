@@ -44,12 +44,12 @@
                   </div>
                   <!-- mega menu item end -->
                   <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
-                    <NuxtLink to="/products/ipo" class="mega-menu-item-link">
-                      <h5 class="mega-menu-item-title mb-3 text-white">Products</h5>
+                    <NuxtLink to="/services/ipo" class="mega-menu-item-link">
+                      <h5 class="mega-menu-item-title mb-3 text-white">Services</h5>
                       <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='/products/ipo' class='mega-menu-nested-link'>IPO,</NuxtLink>
-                        <NuxtLink to='/products/cta' class='mega-menu-nested-link'>CTA,</NuxtLink>
-                        <NuxtLink to='/products/mta' class='mega-menu-nested-link'>MTA,</NuxtLink>
+                        <NuxtLink to='/services/ipo' class='mega-menu-nested-link'>Issue Management,</NuxtLink>
+                        <NuxtLink to='/services/cta' class='mega-menu-nested-link'>CTA,</NuxtLink>
+                        <NuxtLink to='/services/mta' class='mega-menu-nested-link'>MTA,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
@@ -118,7 +118,7 @@
             <footer class='footer d-flex align-items-center'>
               <div class="footer-left">
                 <p class="footer-text mb-0">
-                  &copy; 2022 Shanta Equity. <br> Designed by Name
+                  &copy; 2022 Shanta Equity Ltd. <br>
                 </p>
               </div>
               <div class="footer-menu d-flex justify-content-start">
