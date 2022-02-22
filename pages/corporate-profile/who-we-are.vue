@@ -25,14 +25,13 @@
             </h2>
             <div class='concern-text'>
               <p class='concern-paragraph'>
-                Shanta Securities Limited is an innovative financial services company offering a range of brokerage and investing solutions.
+                Shanta Equity Limited is an innovative full-fledged merchant bank offering a range of investment banking, corporate advisory and portfolio management solutions.
               </p>
               <p class='concern-paragraph'>
-                We believe in being committed to going the extra mile for our customers and using our intuitive research to help clients take informed investing decisions.
-                To continuously improve our clients’ trading and investing experiences, we rely on their input, integrating what they need into our trading tools and services.
+                We draw on the expertise of the best minds in the country to provide our clients with customized investment banking and corporate advisory services
               </p>
               <p class='concern-paragraph'>
-                We aim at deepening clients’ relationship by striving to help clients take control of their investments and finances, while providing relentless services and
+                We aim at meeting the unique needs of each client by striving to help clients take control of their finances, while providing relentless services and
                 maintaining high ethical standards. We have a clear purpose, and we have adapted our business practices to commensurate with such.
               </p>
             </div>

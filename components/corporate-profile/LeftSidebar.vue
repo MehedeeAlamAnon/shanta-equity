@@ -16,7 +16,7 @@
           <NuxtLink to='/corporate-profile/who-we-are' class='list-group-item list-group-item-action text-capitalize'>Who we are</NuxtLink>
           <NuxtLink to='/corporate-profile/vision-mission' class='list-group-item list-group-item-action text-capitalize'>The vision & mission</NuxtLink>
           <NuxtLink to='/corporate-profile/our-core-values' class='list-group-item list-group-item-action text-capitalize'>our core values</NuxtLink>
-          <NuxtLink to='/corporate-profile/board-of-directors' class='list-group-item list-group-item-action text-capitalize'>board of directors</NuxtLink>
+          <!-- <NuxtLink to='/corporate-profile/board-of-directors' class='list-group-item list-group-item-action text-capitalize'>board of directors</NuxtLink> -->
           <NuxtLink to='/corporate-profile/our-logo' class='list-group-item list-group-item-action text-capitalize'>our logo</NuxtLink>
         </ul>
         <!-- sidebar menu end -->
