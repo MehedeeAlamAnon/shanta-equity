@@ -89,13 +89,40 @@
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
-                  <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
+                  <div
+                    @mouseenter="bgHoverTrue($event)"
+                    @mouseleave="bgHoverFalse($event)"
+                    class="mega-menu-item"
+                  >
                     <NuxtLink to="/services/ipo" class="mega-menu-item-link">
-                      <h5 class="mega-menu-item-title mb-3 text-white">Services</h5>
-                      <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                        <NuxtLink to='/services/ipo' class='mega-menu-nested-link'>Issue Management,</NuxtLink>
-                        <NuxtLink to='/services/cta' class='mega-menu-nested-link'>CTA,</NuxtLink>
-                        <NuxtLink to='/services/mta' class='mega-menu-nested-link'>MTA,</NuxtLink>
+                      <h5 class="mega-menu-item-title mb-3 text-white">
+                        Services
+                      </h5>
+                      <p
+                        class="mb-0"
+                        @mouseenter="removeParentBgHover($event)"
+                        @mouseleave="addParentBgHover($event)"
+                      >
+                        <NuxtLink
+                          to="/services/fund_raising"
+                          class="mega-menu-nested-link"
+                          >Fund Raising,</NuxtLink
+                        >
+                        <NuxtLink
+                          to="/services/issue_management"
+                          class="mega-menu-nested-link"
+                          >Issue Management,</NuxtLink
+                        >
+                        <NuxtLink
+                          to="/services/managed_portfolio"
+                          class="mega-menu-nested-link"
+                          >Managed Portfolio,</NuxtLink
+                        >
+                        <NuxtLink
+                          to="/services/corporate_advisory"
+                          class="mega-menu-nested-link"
+                          >Corporate Advisory</NuxtLink
+                        >
                       </p>
                     </NuxtLink>
                   </div>
@@ -128,7 +155,7 @@
                         >
                       </p>
                     </NuxtLink>
-                  </div>
+                  </div> -->
                   <!-- mega menu item end -->
                   <div
                     @mouseenter="bgHoverTrue($event)"
@@ -241,7 +268,7 @@
                         @mouseleave="addParentBgHover($event)"
                       ></p>
                     </NuxtLink>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
