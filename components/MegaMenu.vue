@@ -89,29 +89,13 @@
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
-                  <div
-                    @mouseenter="bgHoverTrue($event)"
-                    @mouseleave="bgHoverFalse($event)"
-                    class="mega-menu-item"
-                  >
-                    <NuxtLink to="" class="mega-menu-item-link">
-                      <h5 class="mega-menu-item-title mb-3 text-white">
-                        Products
-                      </h5>
-                      <p
-                        class="mb-0"
-                        @mouseenter="removeParentBgHover($event)"
-                        @mouseleave="addParentBgHover($event)"
-                      >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >IPO,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >CTA,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >MTA,</NuxtLink
-                        >
+                  <div @mouseenter="bgHoverTrue($event)" @mouseleave="bgHoverFalse($event)" class="mega-menu-item">
+                    <NuxtLink to="/services/ipo" class="mega-menu-item-link">
+                      <h5 class="mega-menu-item-title mb-3 text-white">Services</h5>
+                      <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
+                        <NuxtLink to='/services/ipo' class='mega-menu-nested-link'>Issue Management,</NuxtLink>
+                        <NuxtLink to='/services/cta' class='mega-menu-nested-link'>CTA,</NuxtLink>
+                        <NuxtLink to='/services/mta' class='mega-menu-nested-link'>MTA,</NuxtLink>
                       </p>
                     </NuxtLink>
                   </div>
