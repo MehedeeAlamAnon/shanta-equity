@@ -110,7 +110,7 @@
                         @mouseleave="addParentBgHover($event)"
                       >
                         <NuxtLink
-                          to="/services/fundraising"
+                          to="/services/fund_raising"
                           class="mega-menu-nested-link"
                           >Fund Raising |</NuxtLink
                         >
