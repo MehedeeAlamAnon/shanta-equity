@@ -26,7 +26,7 @@
             <div class='concern-text mt-5'>
               <h5 class='concern-text-title mb-3'>Corporate Office:</h5>
               <address class='concern-address'>
-                <span>The Glass House (Level 10), S.E (B)-2, 38 Gulshan Avenue, Gulshan -1, Dhaka -1212</span> <br>
+                <span>The Glass House (Level 13), S.E (B)-2, 38 Gulshan Avenue, Gulshan -1, Dhaka -1212</span> <br>
                 <span>Phone: +88-02- 58810684-88, FAX: +88-02-9513543</span>
               </address>
             </div>
@@ -39,14 +39,7 @@
               </address>
             </div>
             <!-- concern text end -->
-            <div class='concern-text mt-5'>
-              <h5 class='concern-text-title mb-3'>Motijheel Branch:</h5>
-              <address class='concern-address'>
-                <span>Peoples Insurance Bhaban (10th Floor), 36, Dilkusha C/A, Dhaka-1000</span> <br>
-                <span>Phone: +88-02-9513540-2, FAX: +88-02-9513543</span>
-              </address>
-            </div>
-            <!-- concern text end -->
+
           </div>
         </div>
         <ConcernSmFooter />

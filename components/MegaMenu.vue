@@ -53,37 +53,43 @@
                           to="/corporate-profile/background"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >Background,</NuxtLink
+                          >Background |</NuxtLink
                         >
                         <NuxtLink
                           to="/corporate-profile/who-we-are"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >who we are,</NuxtLink
+                          >Who We Are |</NuxtLink
                         >
                         <NuxtLink
                           to="/corporate-profile/vision-mission"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >the vision & mission,</NuxtLink
+                          >Our Vision & Mission |</NuxtLink
                         >
                         <NuxtLink
                           to="/corporate-profile/our-core-values"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >our core values,</NuxtLink
+                          >Our Core Values |</NuxtLink
                         >
-                        <!-- <NuxtLink
+                        <NuxtLink
                           to="/corporate-profile/board-of-directors"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >board of directors,</NuxtLink
-                        > -->
+                          >Our Board of Directors |</NuxtLink
+                        >
+                        <NuxtLink
+                          to="/corporate-profile/board-of-directors"
+                          class="mega-menu-nested-link"
+                          @click="closeMegaMenu($event)"
+                          >Our Team |</NuxtLink
+                        >
                         <NuxtLink
                           to="/corporate-profile/our-logo"
                           class="mega-menu-nested-link"
                           @click="closeMegaMenu($event)"
-                          >our logo</NuxtLink
+                          >Our Logo</NuxtLink
                         >
                       </p>
                     </NuxtLink>
@@ -106,17 +112,17 @@
                         <NuxtLink
                           to="/services/fund_raising"
                           class="mega-menu-nested-link"
-                          >Fund Raising,</NuxtLink
+                          >Fund Raising |</NuxtLink
                         >
                         <NuxtLink
                           to="/services/issue_management"
                           class="mega-menu-nested-link"
-                          >Issue Management,</NuxtLink
+                          >Issue Management |</NuxtLink
                         >
                         <NuxtLink
                           to="/services/managed_portfolio"
                           class="mega-menu-nested-link"
-                          >Managed Portfolio,</NuxtLink
+                          >Managed Portfolio |</NuxtLink
                         >
                         <NuxtLink
                           to="/services/corporate_advisory"
@@ -127,69 +133,13 @@
                     </NuxtLink>
                   </div>
                   <!-- mega menu item end -->
+
                   <div
                     @mouseenter="bgHoverTrue($event)"
                     @mouseleave="bgHoverFalse($event)"
                     class="mega-menu-item"
                   >
-                    <NuxtLink to="" class="mega-menu-item-link">
-                      <h5 class="mega-menu-item-title mb-3 text-white">
-                        Services
-                      </h5>
-                      <p
-                        class="mb-0"
-                        @mouseenter="removeParentBgHover($event)"
-                        @mouseleave="addParentBgHover($event)"
-                      >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >SMS,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >BEFTN,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >DP,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Internet trading,</NuxtLink
-                        >
-                      </p>
-                    </NuxtLink>
-                  </div> -->
-                  <!-- mega menu item end -->
-                  <div
-                    @mouseenter="bgHoverTrue($event)"
-                    @mouseleave="bgHoverFalse($event)"
-                    class="mega-menu-item"
-                  >
-                    <NuxtLink class="mega-menu-item-link" to="">
-                      <h5 class="mega-menu-item-title mb-3 text-white">
-                        Research & Investment
-                      </h5>
-                      <p
-                        class="mb-0"
-                        @mouseenter="removeParentBgHover($event)"
-                        @mouseleave="addParentBgHover($event)"
-                      >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >IPO Review,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Daily Market Recap,</NuxtLink
-                        >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Morning news flash,</NuxtLink
-                        >
-                      </p>
-                    </NuxtLink>
-                  </div>
-                  <!-- mega menu item end -->
-                  <div
-                    @mouseenter="bgHoverTrue($event)"
-                    @mouseleave="bgHoverFalse($event)"
-                    class="mega-menu-item"
-                  >
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/career/hr-philosophy">
                       <h5 class="mega-menu-item-title mb-3 text-white">
                         Career
                       </h5>
@@ -198,14 +148,14 @@
                         @mouseenter="removeParentBgHover($event)"
                         @mouseleave="addParentBgHover($event)"
                       >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >HR Philosophy,</NuxtLink
+                        <NuxtLink to="/career/hr-philosophy" class="mega-menu-nested-link"
+                          >HR Philosophy |</NuxtLink
                         >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Job Opening,</NuxtLink
+                        <NuxtLink to="/career/job-opening" class="mega-menu-nested-link"
+                          >Job Opening |</NuxtLink
                         >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Apply Online,</NuxtLink
+                        <NuxtLink to="/career/apply-online" class="mega-menu-nested-link"
+                          >Apply Online</NuxtLink
                         >
                       </p>
                     </NuxtLink>
@@ -233,7 +183,7 @@
                     @mouseleave="bgHoverFalse($event)"
                     class="mega-menu-item"
                   >
-                    <NuxtLink class="mega-menu-item-link" to="">
+                    <NuxtLink class="mega-menu-item-link" to="/contact-us/address">
                       <h5 class="mega-menu-item-title mb-3 text-white">
                         Contact us
                       </h5>
@@ -242,33 +192,18 @@
                         @mouseenter="removeParentBgHover($event)"
                         @mouseleave="addParentBgHover($event)"
                       >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Address,</NuxtLink
+                        <NuxtLink to="/contact-us/address" class="mega-menu-nested-link"
+                          >Address |</NuxtLink
                         >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >Location map,</NuxtLink
+                        <NuxtLink to="/contact-us/location-map" class="mega-menu-nested-link"
+                          >Location map |</NuxtLink
                         >
-                        <NuxtLink to="" class="mega-menu-nested-link"
-                          >feedback,</NuxtLink
+                        <NuxtLink to="/contact-us/feedback" class="mega-menu-nested-link"
+                          >Feedback</NuxtLink
                         >
                       </p>
                     </NuxtLink>
                   </div>
-                  <!-- mega menu item end -->
-                  <div
-                    @mouseenter="bgHoverTrue($event)"
-                    @mouseleave="bgHoverFalse($event)"
-                    class="mega-menu-item"
-                  >
-                    <NuxtLink class="mega-menu-item-link" to="">
-                      <h5 class="mega-menu-item-title mb-3 text-white"></h5>
-                      <p
-                        class="mb-0"
-                        @mouseenter="removeParentBgHover($event)"
-                        @mouseleave="addParentBgHover($event)"
-                      ></p>
-                    </NuxtLink>
-                  </div> -->
                 </div>
               </div>
             </div>
