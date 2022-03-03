@@ -21,22 +21,22 @@
         <!-- breadcrumb end -->
         <ul class="sidebar-menu list-group mt-5">
           <NuxtLink
-            to="/services/fundraising"
+            to="/services/fund_raising"
             class="list-group-item list-group-item-action text-capitalize"
             >Fund Raising</NuxtLink
           >
           <NuxtLink
-            to="/services/issue"
+            to="/services/issue_management"
             class="list-group-item list-group-item-action text-capitalize"
             >Issue Management</NuxtLink
           >
           <NuxtLink
-            to="/services/mta"
+            to="/services/managed_portfolio"
             class="list-group-item list-group-item-action text-capitalize"
             >Managed Portfolio</NuxtLink
           >
           <NuxtLink
-            to="/services/cta"
+            to="/services/corporate_advisory"
             class="list-group-item list-group-item-action text-capitalize"
             >Corporate Advisory</NuxtLink
           >
