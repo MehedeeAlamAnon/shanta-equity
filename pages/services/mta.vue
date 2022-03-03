@@ -25,32 +25,26 @@
         <div class="concern-content">
           <div class="concern-content-overlay text-white px-30">
             <h2 class="title text-capitalize heading-6">
-              Managed Portfolio Account:
+              MTA (Margin Trading Account):
             </h2>
             <div class="concern-text">
               <p class="concern-paragraph">
-                With our managed portfolio service, Shanta Equity Limited will
-                act as your fund manager. We will utilize our team of highly
-                experienced professionals, backed up by professional research
-                support, in order to make investment decisions to maximize
-                returns of your portfolio.
-              </p>
-              <p>
-                We will tailor your portfolio according to your specific risk
-                tolerance and return expectations so that it will meet your
-                specific needs.
+                Investors have the option of trading with margin loan. Margin
+                trading account allows investors to buy more stock than they
+                would be able to normally. This is different from a regular cash
+                account, in which investor trade using the money in the account.
+                The margin loan and interest rate will differ as per management
+                decision. The margin account may be part of your standard
+                account opening agreement or may be a completely separate
+                agreement.
               </p>
               <h5 class="concern-text-title mb-3">Features</h5>
               <ul class="list-group concern-text-features">
                 <li class="list-group-item d-flex align-items-baseline">
                   <font-awesome-icon :icon="['fas', 'angle-right']" />
                   <span class="ml-2"
-                    >SEL will execute trades on behalf of the investor</span
+                    >Orders can be received through email & telephone.</span
                   >
-                </li>
-                <li class="list-group-item d-flex align-items-baseline">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
-                  <span class="ml-2">Margin Loan can be availed.</span>
                 </li>
                 <li class="list-group-item d-flex align-items-baseline">
                   <font-awesome-icon :icon="['fas', 'angle-right']" />

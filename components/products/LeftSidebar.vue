@@ -36,6 +36,11 @@
             >Managed Portfolio</NuxtLink
           >
           <NuxtLink
+            to="/services/mta"
+            class="list-group-item list-group-item-action text-capitalize"
+            >Margin Trading Account</NuxtLink
+          >
+          <NuxtLink
             to="/services/corporate_advisory"
             class="list-group-item list-group-item-action text-capitalize"
             >Corporate Advisory</NuxtLink

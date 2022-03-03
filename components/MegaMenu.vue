@@ -125,6 +125,16 @@
                           >Managed Portfolio |</NuxtLink
                         >
                         <NuxtLink
+                          to="/services/mta"
+                          class="mega-menu-nested-link"
+                          >Margin Trading Account |</NuxtLink
+                        >
+                        <NuxtLink
+                          to="/services/mta"
+                          class="mega-menu-nested-link"
+                          >Margin Trading Account |</NuxtLink
+                        >
+                        <NuxtLink
                           to="/services/corporate_advisory"
                           class="mega-menu-nested-link"
                           >Corporate Advisory</NuxtLink
@@ -139,7 +149,10 @@
                     @mouseleave="bgHoverFalse($event)"
                     class="mega-menu-item"
                   >
-                    <NuxtLink class="mega-menu-item-link" to="/career/hr-philosophy">
+                    <NuxtLink
+                      class="mega-menu-item-link"
+                      to="/career/hr-philosophy"
+                    >
                       <h5 class="mega-menu-item-title mb-3 text-white">
                         Career
                       </h5>
@@ -148,13 +161,19 @@
                         @mouseenter="removeParentBgHover($event)"
                         @mouseleave="addParentBgHover($event)"
                       >
-                        <NuxtLink to="/career/hr-philosophy" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/career/hr-philosophy"
+                          class="mega-menu-nested-link"
                           >HR Philosophy |</NuxtLink
                         >
-                        <NuxtLink to="/career/job-opening" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/career/job-opening"
+                          class="mega-menu-nested-link"
                           >Job Opening |</NuxtLink
                         >
-                        <NuxtLink to="/career/apply-online" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/career/apply-online"
+                          class="mega-menu-nested-link"
                           >Apply Online</NuxtLink
                         >
                       </p>
@@ -183,7 +202,10 @@
                     @mouseleave="bgHoverFalse($event)"
                     class="mega-menu-item"
                   >
-                    <NuxtLink class="mega-menu-item-link" to="/contact-us/address">
+                    <NuxtLink
+                      class="mega-menu-item-link"
+                      to="/contact-us/address"
+                    >
                       <h5 class="mega-menu-item-title mb-3 text-white">
                         Contact us
                       </h5>
@@ -192,13 +214,19 @@
                         @mouseenter="removeParentBgHover($event)"
                         @mouseleave="addParentBgHover($event)"
                       >
-                        <NuxtLink to="/contact-us/address" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/contact-us/address"
+                          class="mega-menu-nested-link"
                           >Address |</NuxtLink
                         >
-                        <NuxtLink to="/contact-us/location-map" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/contact-us/location-map"
+                          class="mega-menu-nested-link"
                           >Location map |</NuxtLink
                         >
-                        <NuxtLink to="/contact-us/feedback" class="mega-menu-nested-link"
+                        <NuxtLink
+                          to="/contact-us/feedback"
+                          class="mega-menu-nested-link"
                           >Feedback</NuxtLink
                         >
                       </p>

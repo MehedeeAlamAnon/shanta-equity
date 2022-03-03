@@ -5,54 +5,61 @@
       enter-active-class="slideInDown"
       leave-active-class="slideOutUp"
     >
-      <div class="mega-menu-wrapper" v-if='megaMenuShow' style="animation-duration: 0.5s">
+      <div
+        class="mega-menu-wrapper"
+        v-if="megaMenuShow"
+        style="animation-duration: 0.5s"
+      >
         <MegaMenu />
       </div>
     </transition>
 
-    <div class='hamburger-toggle'>
-      <Hamburger/>
+    <div class="hamburger-toggle">
+      <Hamburger />
     </div>
 
     <main class="main concern-main">
       <LeftSidebar />
       <!-- sidebar end -->
       <div class="main-content vh-100">
-        <div class='concern-content'>
+        <div class="concern-content">
           <div class="concern-content-overlay text-white px-30">
-            <h2 class='title text-capitalize heading-6'>
-              IPO (Initial Public Offering) account :
-            </h2>
-            <div class='concern-text'>
-              <p class='concern-paragraph'>
-                Investment in IPO is very easy now with Shanta Securities Limited. You can come physically in our office or download softcopy from our website and fill the IPO application form and we will do the rest for you.
+            <h2 class="title text-capitalize heading-6">Fundraising:</h2>
+            <div class="concern-text">
+              <p class="concern-paragraph">
+                Shanta Equity Limited can help your firm to finance its projects
+                through the optimal combination of Debt and Equity Adviory in
+                both local and foreign currency.
               </p>
-              <h5 class='concern-text-title mb-3'>
-                For IPO application form please <a href='' class='text-theme-primary'>click here</a>
+              <p>
+                Debt financing includes Structured Financing, Syndicated Loans,
+                Foreign Loans, Concessional Loans, both listed and non-listed
+                Bonds, Redeemable Preference Shares and Securitization of
+                receivables.
+              </p>
+              <p>
+                Equity financing options include listing through an Initial
+                Public Offering, Rights Share Issuance, Repeat Public Offering,
+                Private Equity or Venture Capital Financing from both local and
+                foreign funds.
+              </p>
+              <p>
+                Our highly experienced team will analyze the existing financials
+                and condition of your firm before structuring and arranging the
+                optimal financing transaction to meet your unique needs. We
+                leverage our team's vast experience and relationships to
+                approach the best institutions, both locally and
+                internationally, that can meet your needs.
+              </p>
+              <p>
+                Our team remains highly engaged with your firm and provide close
+                assistance during the entire process of the transaction until
+                closure.
+              </p>
+              <h5 class="concern-text-title mb-3">
+                To contact us please
+                <a href="mailto:info@shantaequity.net" class="text-theme-primary">click here</a>
               </h5>
-              <p class='concern-paragraph'>
-                This month's IPOs/ IPOs - August 2018
-              </p>
-              <div class='concern-text-table'>
-                <table class='table table-bordered'>
-                  <tr>
-                    <th>Company</th>
-                    <th>Subscription Open</th>
-                    <th>Subscription Close</th>
-                    <th>Offer Price</th>
-                    <th>Prospectus</th>
-                    <th>IPO Summary</th>
-                  </tr>
-                  <tr>
-                    <td>Kattali Textile Limited	</td>
-                    <td>August 28, 2018	</td>
-                    <td>September 13, 2018	</td>
-                    <td>10</td>
-                    <td><a href='' class='text-theme-primary font-weight-bold'>View</a></td>
-                    <td><a href='' class='text-theme-primary font-weight-bold'>View</a></td>
-                  </tr>
-                </table>
-              </div>
             </div>
           </div>
         </div>
@@ -67,7 +74,7 @@
 import MegaMenu from '~/components/MegaMenu'
 import Logo from '~/components/Logo'
 
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 import Hamburger from '~/components/Hamburger'
 import ConcernSidebarFooter from '../../components/ConcernSidebarFooter'
 import ConcernSmFooter from '../../components/ConcernSmFooter'
@@ -81,15 +88,13 @@ export default {
     ConcernSidebarFooter,
     Hamburger,
     Logo,
-    MegaMenu
+    MegaMenu,
   },
   computed: {
-    ...mapState({ megaMenuShow: state => state.megaMenuOpen })
+    ...mapState({ megaMenuShow: (state) => state.megaMenuOpen }),
   },
   data() {
-    return {
-
-    }
+    return {}
   },
 }
 </script>
