@@ -154,6 +154,16 @@
               </NuxtLink>
               <NuxtLink to="/" class="investment-info-item mb-4 d-block">
                 <h3 class="heading-4 text-uppercase text-white mb-2">
+                  Issue Management
+                </h3>
+                <p class="investment-info-text text-muted">
+                  If you need to raise funds through an IPO or Bond issuance,
+                  our experienced team is here to handle the entire process from
+                  start to finish
+                </p>
+              </NuxtLink>
+              <NuxtLink to="/" class="investment-info-item mb-4 d-block">
+                <h3 class="heading-4 text-uppercase text-white mb-2">
                   Managed Portfolio
                 </h3>
                 <p class="investment-info-text text-muted">
