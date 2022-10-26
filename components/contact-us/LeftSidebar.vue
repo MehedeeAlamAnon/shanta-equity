@@ -13,8 +13,8 @@
         <!-- breadcrumb end -->
         <ul class='sidebar-menu list-group mt-5'>
           <NuxtLink to='/contact-us/address' class='list-group-item list-group-item-action text-capitalize'>Address</NuxtLink>
-          <NuxtLink to='/contact-us/location-map' class='list-group-item list-group-item-action text-capitalize'>Location Map</NuxtLink>
-          <NuxtLink to='/contact-us/feedback' class='list-group-item list-group-item-action text-capitalize'>Feedback</NuxtLink>
+          <!-- <NuxtLink to='/contact-us/location-map' class='list-group-item list-group-item-action text-capitalize'>Location Map</NuxtLink> -->
+          <!-- <NuxtLink to='/contact-us/feedback' class='list-group-item list-group-item-action text-capitalize'>Feedback</NuxtLink> -->
         </ul>
         <!-- sidebar menu end -->
       </div>
