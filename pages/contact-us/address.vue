@@ -26,16 +26,16 @@
             <div class='concern-text mt-5'>
               <h5 class='concern-text-title mb-3'>Corporate Office:</h5>
               <address class='concern-address'>
-                <span>The Glass House (Level 13), S.E (B)-2, 38 Gulshan Avenue, Gulshan -1, Dhaka -1212</span> <br>
-                <span>Phone: +88-02- 58810684-88, FAX: +88-02-9513543</span>
+                <span>The Glass House (Level 4), S.E (B)-2, 38 Gulshan Avenue, Gulshan -1, Dhaka -1212</span> <br>
+                <span>Phone: +88-02-48814118, FAX: +88-02-48814119</span>
               </address>
             </div>
             <!-- concern text end -->
             <div class='concern-text mt-5'>
               <h5 class='concern-text-title mb-3'>Registered Office:</h5>
               <address class='concern-address'>
-                <span>Room # 603, Dhaka Stock Exchange, Building (5th Floor), 9/F Motijheel C/A, Dhaka-1000</span> <br>
-                <span>Phone: +88-02-9551407, PABX: 9564601, Ext-603</span>
+                <span>Shanta Western Tower (Level-10), 186 Bir Uttam Mir Shawkat Sarak, Tejgaon, Dhaka-1208</span> <br>
+                <!-- <span>Phone: +88-02-9551407, PABX: 9564601, Ext-603</span> -->
               </address>
             </div>
             <!-- concern text end -->

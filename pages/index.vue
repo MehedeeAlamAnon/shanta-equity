@@ -126,12 +126,12 @@
         </div>
         <div class="sidebar-inner sidebar-body">
           <NuxtLink
-            to="/login"
+            to="/corporate-profile/background"
             class="btn btn-block btn-theme-primary font-weight-bold"
             >Learn More</NuxtLink
           >
           <NuxtLink
-            to="/open-account"
+            to="/contact-us/address"
             class="btn btn-block btn-theme-primary font-weight-bold mt-4"
             >Contact Us</NuxtLink
           >
