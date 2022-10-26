@@ -124,7 +124,7 @@
                         Prospectus
                       </h5>
                         <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                          <NuxtLink to="/bhl_rh_prospectus.pdf" class="mega-menu-nested-link">Best Holdings Limited Red Herring Prospectus</NuxtLink>
+                          <a href="/bhl_rh_prospectus.pdf" download="" class="mega-menu-nested-link">Best Holdings Limited Red Herring Prospectus</a>
                         </p>
                     </NuxtLink>
 
