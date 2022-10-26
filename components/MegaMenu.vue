@@ -124,7 +124,7 @@
                         Prospectus
                       </h5>
                         <p class="mb-0" @mouseenter="removeParentBgHover($event)" @mouseleave="addParentBgHover($event)">
-                          <a href="/bhl_rh_prospectus.pdf" download="" class="mega-menu-nested-link">Best Holdings Limited Red Herring Prospectus</a>
+                          <span @click="downloadProspectus()" class="mega-menu-nested-link">Best Holdings Limited Red Herring Prospectus</span>
                         </p>
                     </NuxtLink>
 
@@ -196,6 +196,13 @@ export default {
     toggleBtn() {
       this.showEl = true
     },
+    downloadProspectus() {
+      const link = document.createElement('a')
+      link.href = '/bhl_rh_prospectus.pdf'
+      link.download = 'bhl_rh_prospectus.pdf'
+      link.target = '_blank'
+      link.click()
+    }
   },
   created() {
     setTimeout(() => (this.elementVisible = true), 1000)
